@@ -1,0 +1,23 @@
+<html>
+<head> <title> My page </title>  </head>
+<body>
+<h1>A K's Coffee Shop</h1>
+<div style="background-image: url('COFFEESHOP.jpg');"height=500 width=500/>
+<img src="smiley.gif" height=500 width=500/>
+</bg>
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "3eb6a080-0a42-48b4-8f25-9fb0cb948fd7", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "ddb2cbc9-da2c-4fe9-9eca-d78b6bf76cd3", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js"
+    document.head.appendChild(t);
+  });
+</script>
+</body>
+
+</html>
